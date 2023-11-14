@@ -113,7 +113,7 @@ numb = m;
 /* Handle negative numbers */
 if (last < 0)
 {
-_putchar('-');
+putchar('-');
 numb = -numb;
 m = -m;
 last = -last;
@@ -132,7 +132,7 @@ numb = m;
 while (exp > 0)
 {
 digit = numb / exp;
-_putchar(digit + '0');
+putchar(digit + '0');
 numb = numb - (digit *exp);
 exp = exp / 10;
 m++;
@@ -140,7 +140,7 @@ m++;
 }
 
 /* Print the last digit */
-_putchar(last + '0');
+putchar(last + '0');
 
 return (i);
 }
